@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1049179846199",
+    "project_id": "openeye-1699b",
+    "storage_bucket": "openeye-1699b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049179846199:android:093e3653cd6be0b14e31b2",
+        "android_client_info": {
+          "package_name": "com.txtlabs.openeye"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGv89ZfESU97xk2H8Rg0ACJTegcLsNNPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

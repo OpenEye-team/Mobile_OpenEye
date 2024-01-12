@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Open Eye</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_history">Tracker</string>
+    <string name="title_profile">Profile</string>
+
+
+    <string name="last_mont">Last Month</string>
+    <string name="last_week">Last Week</string>
+
+    <string name="name">Nama</string>
+    <string name="what_can_i_do_for_you">What can i do for you?</string>
+    <string name="retinopathy_check">Retinopathy Check</string>
+    <string name="chat_bot">Chat bot</string>
+    <string name="recomended_article">Recomended Article</string>
+
+    <string name="retinopathy">Retinopathy</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="are_you_sure">Are you sure?</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
