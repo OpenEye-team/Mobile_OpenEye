@@ -38,12 +38,15 @@ You can install the Demo [here](link).
 <img  src="">
 
 #### 6. Scan Image
-<img  src="">
+<img  src="https://github.com/OpenEye-team/Mobile_OpenEye/assets/73357308/5e8b6142-01fa-4f8f-a86a-b110c116f5ca" width="30%">
 
-##### 6.1. Scan Image
-<img  src="">
+##### 6.1 Edit Image
+<img  src="https://github.com/OpenEye-team/Mobile_OpenEye/assets/73357308/5409eb53-8345-4920-8e01-7f76888f3b79"  width="30%">
 
-##### 6.1. Scan Image
+##### 6.2 Predict
+<img  src="https://github.com/OpenEye-team/Mobile_OpenEye/assets/73357308/1085adec-ec1e-46f0-ae45-728bed3f806f" width="30%">
+
+##### 6.3 Monitoring
 <img  src="">
 
 #### 7. Monitoring
