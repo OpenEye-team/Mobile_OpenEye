@@ -1,8 +1,5 @@
 ## OpenEye Mobile Android
 
-## Demo
-You can install the Demo [here](link).
-
 ## Installation
 
 1. Clone the repository
@@ -11,13 +8,19 @@ You can install the Demo [here](link).
    ```
 2. Retrieve the project dependencies by running the following command
    ```sh
-   SDK
-   Android
-   Versi Gradle
+   Gradle JDK : jbr-17
+   Gradle Plugin : 8.1.1
+   Gradle Version : 8.0
+   Java Source : 1_8
+   Max SDK Version : 34
+   Min SDK Version : 24
+   Kotlin : 1.9.0
+   Android Studio : Android Studio Giraffe | 2022.3.1 Patch 1
+
+   Link API Local Run Service
    ```
 
 4. Connect a physical device or start an emulator.
-
 5. Run the application
 
 ## Tutorial
@@ -32,10 +35,10 @@ You can install the Demo [here](link).
 <img  src="https://github.com/OpenEye-team/Mobile_OpenEye/assets/73357308/a236d60d-0348-4a38-8bda-43c0aa564c84" width="30%">
 
 #### 4. Home
-<img  src="">
+<img  src="https://github.com/OpenEye-team/Mobile_OpenEye/assets/73357308/e3c57a94-f44b-4480-a4b9-ff597987aced" width="30%">
 
 #### 5. ChatBot
-<img  src="">
+<img  src="https://github.com/OpenEye-team/Mobile_OpenEye/assets/73357308/ebca8370-a46e-4332-858a-bd2180ce15e1" width="30%">
 
 #### 6. Scan Image
 <img  src="https://github.com/OpenEye-team/Mobile_OpenEye/assets/73357308/5e8b6142-01fa-4f8f-a86a-b110c116f5ca" width="30%">
@@ -46,12 +49,12 @@ You can install the Demo [here](link).
 ##### 6.2 Predict
 <img  src="https://github.com/OpenEye-team/Mobile_OpenEye/assets/73357308/1085adec-ec1e-46f0-ae45-728bed3f806f" width="30%">
 
-##### 6.3 Monitoring
+##### 6.3 Result Scan
 <img  src="">
 
 #### 7. Monitoring
-<img  src="">
+<img  src="https://github.com/OpenEye-team/Mobile_OpenEye/assets/73357308/009b24f5-e40a-4dc5-9ae9-a720b5ab4151" width="30%">
 
 #### 8. Profile
-<img  src="">
+<img  src="https://github.com/OpenEye-team/Mobile_OpenEye/assets/73357308/f150e270-0f54-452b-9d05-9c6697a29b0c" width="30%">
 
