@@ -1,26 +1,36 @@
 {
   "project_info": {
-    "project_number": "1049179846199",
-    "project_id": "openeye-1699b",
-    "storage_bucket": "openeye-1699b.appspot.com"
+    "project_number": "201791681149",
+    "project_id": "peaky-blinder-57b0d",
+    "storage_bucket": "peaky-blinder-57b0d.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1049179846199:android:093e3653cd6be0b14e31b2",
+        "mobilesdk_app_id": "1:201791681149:android:0c4ed7da8e7703f2f9b714",
         "android_client_info": {
           "package_name": "com.txtlabs.openeye"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "201791681149-dr1tv9mmuf5l9u4jo6n5pcn0j4lf37s5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyCGv89ZfESU97xk2H8Rg0ACJTegcLsNNPw"
+          "current_key": "AIzaSyBAnC_iyj4Lb3cAqG214FBZa0mJ46Hqm90"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "201791681149-dr1tv9mmuf5l9u4jo6n5pcn0j4lf37s5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

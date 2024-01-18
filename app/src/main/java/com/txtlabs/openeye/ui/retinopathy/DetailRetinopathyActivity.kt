@@ -1,5 +1,8 @@
 package com.txtlabs.openeye.ui.retinopathy
 
+import android.app.Activity
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -7,6 +10,7 @@ import android.view.View.GONE
 import android.view.View.VISIBLE
 import android.widget.Toast
 import androidx.core.net.toUri
+import com.github.dhaval2404.imagepicker.ImagePicker
 import com.txtlabs.openeye.data.ResultState
 import com.txtlabs.openeye.databinding.ActivityDetailRetinopathyBinding
 import java.io.File
@@ -15,6 +19,7 @@ class DetailRetinopathyActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailRetinopathyBinding
     private lateinit var viewModel: RetinopathyViewModel
+    private var uri: Uri? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,7 +34,18 @@ class DetailRetinopathyActivity : AppCompatActivity() {
         val file = uri?.path?.let { File(it) }
         viewModel.getFile = file
 
+        take()
         predict()
+    }
+
+    private fun take(){
+        binding.btnCamera.setOnClickListener {
+            ImagePicker.with(this@DetailRetinopathyActivity)
+                .crop()
+                .compress(1024)
+                .maxResultSize(1080, 1080)
+                .start()
+        }
     }
 
     private fun predict() {
@@ -65,12 +81,14 @@ class DetailRetinopathyActivity : AppCompatActivity() {
                             Log.d("AKU", "$desc2")
                             tvInformasi.text = desc2
 
+                            binding.loading.visibility = GONE
                             cardView.visibility = VISIBLE
                             rekomendasi.visibility = VISIBLE
                             tvRekomendasi.visibility = VISIBLE
                             informasi.visibility = VISIBLE
                             tvInformasi.visibility = VISIBLE
                             btnPredict.visibility = GONE
+                            btnCamera.visibility = GONE
                         }
                     }
                     is ResultState.Failure -> {
@@ -78,6 +96,7 @@ class DetailRetinopathyActivity : AppCompatActivity() {
                     }
 
                     is ResultState.Loading -> {
+                        binding.loading.visibility = VISIBLE
                         Toast.makeText(this@DetailRetinopathyActivity, "Loading", Toast.LENGTH_SHORT).show()
                     }
 
@@ -85,6 +104,30 @@ class DetailRetinopathyActivity : AppCompatActivity() {
                         Toast.makeText(this@DetailRetinopathyActivity, "Failure", Toast.LENGTH_SHORT).show()
                     }
                 }
+            }
+        }
+    }
+
+    @Deprecated("Deprecated in Java")
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        when (resultCode) {
+            Activity.RESULT_OK -> {
+                val uri: Uri = data?.data!!
+                uri.let { this.uri = it }
+
+                Log.d("CEK_URI", "$uri")
+                Intent(this, DetailRetinopathyActivity::class.java).also {
+                    it.putExtra(EXTRA_URI, uri.toString())
+                    startActivity(it)
+                    finish()
+                }
+            }
+            ImagePicker.RESULT_ERROR -> {
+                Toast.makeText(this, ImagePicker.getError(data), Toast.LENGTH_SHORT).show()
+            }
+            else -> {
+                Toast.makeText(this, "Task Cancelled", Toast.LENGTH_SHORT).show()
             }
         }
     }

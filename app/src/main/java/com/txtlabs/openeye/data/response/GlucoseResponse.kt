@@ -23,7 +23,7 @@ data class DataItem(
 	val meal: String? = null,
 
 	@field:SerializedName("createdAt")
-	val createdAt: String? = null,
+	val createdAt: String,
 
 	@field:SerializedName("id")
 	val id: String? = null,

@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     tools:context=".ui.retinopathy.DetailRetinopathyActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -26,9 +25,11 @@
             android:id="@+id/cardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
             android:visibility="gone"
-            app:cardCornerRadius="@dimen/_18sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/img_view">
@@ -59,7 +60,9 @@
             android:id="@+id/rekomendasi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
             android:text="General Rekomendasi"
             android:textSize="@dimen/_20sdp"
             android:textStyle="bold"
@@ -72,7 +75,9 @@
             android:id="@+id/tv_rekomendasi"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             android:text="General Rekomendasi"
             android:textSize="@dimen/_18sdp"
             android:visibility="gone"
@@ -84,7 +89,9 @@
             android:id="@+id/informasi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
             android:text="Informasi lebih lanjut"
             android:textSize="@dimen/_20sdp"
             android:textStyle="bold"
@@ -97,7 +104,9 @@
             android:id="@+id/tv_informasi"
             android:layout_width="match_parent"
             android:layout_height="24dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             android:text="General Rekomendasi"
             android:textSize="@dimen/_18sdp"
             android:visibility="gone"
@@ -123,6 +132,33 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/img_view" />
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCamera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/rounded_bg_button"
+            android:text="Take Photo"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_blue"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnPredict" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
