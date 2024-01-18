@@ -50,7 +50,7 @@
 <img  src="https://github.com/OpenEye-team/Mobile_OpenEye/assets/73357308/1085adec-ec1e-46f0-ae45-728bed3f806f" width="30%">
 
 ##### 6.3 Result Scan
-<img  src="">
+<img  src="https://github.com/OpenEye-team/Mobile_OpenEye/assets/73357308/c35d2af3-4ce9-4bd8-9ad2-2007e01b4c83" width="30%">
 
 #### 7. Monitoring
 <img  src="https://github.com/OpenEye-team/Mobile_OpenEye/assets/73357308/009b24f5-e40a-4dc5-9ae9-a720b5ab4151" width="30%">
