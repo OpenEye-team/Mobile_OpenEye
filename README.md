@@ -35,7 +35,7 @@
 <img  src="https://github.com/OpenEye-team/Mobile_OpenEye/assets/73357308/a236d60d-0348-4a38-8bda-43c0aa564c84" width="30%">
 
 #### 4. Home
-<img  src="https://github.com/OpenEye-team/Mobile_OpenEye/assets/73357308/e3c57a94-f44b-4480-a4b9-ff597987aced" width="30%">
+<img  src="https://github.com/OpenEye-team/Mobile_OpenEye/assets/73357308/b4823b34-63b2-4e1e-a0fa-2ea08ba7964a" width="30%">
 
 #### 5. ChatBot
 <img  src="https://github.com/OpenEye-team/Mobile_OpenEye/assets/73357308/ebca8370-a46e-4332-858a-bd2180ce15e1" width="30%">
