@@ -40,6 +40,12 @@ You can install the Demo [here](link).
 #### 6. Scan Image
 <img  src="">
 
+##### 6.1. Scan Image
+<img  src="">
+
+##### 6.1. Scan Image
+<img  src="">
+
 #### 7. Monitoring
 <img  src="">
 
